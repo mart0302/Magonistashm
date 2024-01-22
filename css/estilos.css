@@ -1,0 +1,87 @@
+/* Reset de márgenes y padding en todo el documento */
+body, h1, h2, h3, h4, h5, h6, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Ajustes generales */
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+/* Encabezado */
+header {
+    background-color: #fff;
+    padding: 20px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo */
+h1.text-center.display-4 img {
+    width: 100%;
+    height: auto;
+}
+
+/* Menú de navegación */
+.navbar {
+    margin-top: 10px;
+}
+
+/* Contenedor principal */
+.containerHolder {
+    margin-top: 20px;
+}
+
+/* Slider */
+._slider {
+    margin-top: 20px;
+}
+
+/* Pie de página */
+footer {
+    background-color: #f8f9fa;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+/* Redes sociales en el pie de página */
+.social_list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.social_list li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.social_list img {
+    width: 30px;
+    height: auto;
+}
+
+/* Botones del slider */
+#prevButton,
+#nextButton {
+    display: inline-block;
+    margin-top: 20px;
+}
+
+/* Imágenes dentro del slider */
+#slider_simple1 img {
+    width: 100%;
+    height: auto;
+}
+
+/* Otros estilos específicos según sea necesario */
+
+/* Estilos para los enlaces */
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
