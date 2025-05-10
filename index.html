@@ -1,170 +1,189 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-  <title>Magonistas HM</title>
+  <title>Magonistas HM - Club de Motos</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <style>
-    /* Remove the navbar's default margin-bottom and rounded borders */ 
-    .navbar {
-      margin-bottom: 0;
-      border-radius: 0;
-    }
-    
-    /* Add a gray background color and some padding to the footer */
-    footer {
-      background-color: #f2f2f2;
-      padding: 25px;
-    }
-    
-  .carousel-inner img {
-      width: 100%; /* Set width to 100% */
-      margin: auto;
-      min-height:200px;
-  }
-
-  /* Hide the carousel text when the screen is less than 600 pixels wide */
-  @media (max-width: 600px) {
-    .carousel-caption {
-      display: none; 
-    }
-  }
-  </style>
+  <!-- Fuentes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Bebas+Neue&display=swap" rel="stylesheet">
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- CSS personalizado -->
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
-<nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>                        
-        </button>
-        <a class="navbar-brand" href="#">
-            <img src="img/14.png" alt="logo" class="img-fluid" style="max-height: 4%;">
-        </a>
-        
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="img/14.png" alt="Magonistas HM Logo" id="navbar-logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="quienessomos.html">¿Quiénes Somos?</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="proyectos.html">Proyectos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contacto.html">Contacto</a>
+          </li>
+        </ul>
+      </div>
     </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="index.html">Inicio</a></li>
-        <li><a href="quienessomos.html">¿Quienes Somos?</a></li>
-        <li><a href="proyectos.html">Proyectos</a></li>
-        <li><a href="contacto.html">Contacto</a></li>
-      </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero-section" id="hero">
+    <div class="hero-content">
+      <h1 class="hero-title">MAGONISTAS</h1>
+      <p class="hero-subtitle">SOMOS PENSAMIENTO Y ACCIÓN</p>
+      <a href="#about" class="btn btn-primary btn-lg hero-btn">Conócenos</a>
     </div>
-  </div>
-</nav>
+    <div class="scroll-down">
+      <i class="fas fa-chevron-down"></i>
+    </div>
+  </section>
 
-<div id="myCarousel" class="carousel slide" data-ride="carousel">
-    <!-- Indicators -->
-    <ol class="carousel-indicators">
-      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-      <li data-target="#myCarousel" data-slide-to="1"></li>
-      <li data-target="#myCarousel" data-slide-to="2"></li>
-    </ol>
-
-    <!-- Wrapper for slides -->
-    <div class="carousel-inner" role="listbox">
-        <div class="item active">
-            <img src="img/FONDO6.png" alt="Image" class="img-fluid">
-            <div class="carousel-caption">
-                <h2 style="font-family: 'Homer Simpson UI'; font-size: 4.5em;">MAGONISTAS</h2>
-                <p>SOMOS PENSAMIENTO Y ACCIÓN</p>
-            </div>      
+  <!-- Sección Acerca de -->
+  <section class="section about-section" id="about">
+    <div class="container">
+      <h2 class="section-title">BIENVENIDOS MAGONISTAS</h2>
+      <div class="row">
+        <div class="col-md-6">
+          <img src="img/quienessomos.png" alt="Fundadores" class="img-fluid about-img" data-animate="fadeInLeft">
         </div>
-
-      <div class="item">
-        <img src="img/72.png" alt="Image">
-        <div class="carousel-caption">
-            <h2 style="font-family: 'Homer Simpson UI'; font-size: 4.5em;">MAGONISTAS</h2>
-            <p>SOMOS PENSAMIENTO Y ACCIÓN</p>
-        </div>      
-      </div>
-
-      <div class="item">
-        <img src="img/8.png" alt="Image">
-        <div class="carousel-caption">
-            <h2 style="font-family: 'Homer Simpson UI'; font-size: 4.5em;">MAGONISTAS</h2>
-            <p>SOMOS PENSAMIENTO Y ACCIÓN</p>
-        </div>      
+        <div class="col-md-6">
+          <div class="about-content" data-animate="fadeInRight">
+            <p>En la vibrante noche del 21 de noviembre de 2023, en el corazón de San Pedro Cholula, nació MAGONISTAS HM gracias a la visión compartida de Rafa, Tony y Neto. Sentados entre chelas y cubas en el emblemático bar restaurante Enamorada, estos tres apasionados bikers trazaron los primeros contornos de una nueva era en el universo bikers de Puebla y más allá.</p>
+            <p>El 13 de enero de 2024 quedará grabado en la historia de la comunidad motociclista como el día en que la hermandad Magonista hizo su presentación oficial. Fue un evento lleno de emoción y orgullo, donde los valores de camaradería y pasión por el motociclismo se manifestaron en su máximo esplendor.</p>
+          </div>
+        </div>
       </div>
     </div>
-    </div>
+  </section>
 
-    
-
-    <style>
-      /* Estilos personalizados para hacer los botones más pequeños y centrarlos verticalmente */
-      .carousel-control {
-          font-size: 20px; /* Puedes ajustar el tamaño según tus preferencias */
-          width: 30px; /* Ancho personalizado */
-          height: 30px; /* Altura personalizada */
-          line-height: 30px; /* Ajuste del espaciado interno para centrar el ícono verticalmente */
-          opacity: 0.8; /* Puedes ajustar la opacidad según tus preferencias */
-          top: 50%; /* Coloca el botón en el 50% de la posición superior */
-          transform: translateY(-50%); /* Centra verticalmente el botón */
-      }
-  </style>
-  
-  <!-- Left and right controls -->
-  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-  </a>
-  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-  </a>
-  
-  
-  
-<div class="container text-center">    
-    <h3 style="font-family: 'Homer Simpson UI'; font-size: 2.5em;">BIENVENIDOS MAGONISTAS</h3><br>
-  <div class="row">
-    <div class="col-sm-4">
-      <img src="img/quienessomos.png" class="img-responsive" style="width:100%" alt="Image">
-    </div>
-    <div class="col-sm-4">
-      <p>En la vibrante noche del 21 de noviembre de 2023, en el corazón de San Pedro Cholula, nació MAGONISTAS HM gracias a la visión compartida de Rafa, Tony y Neto. Sentados entre chelas y cubas en el emblemático bar restaurante Enamorada, estos tres apasionados bikers trazaron los primeros contornos de una nueva era en el universo bikers de Puebla y más allá.</p>
-        <p></p>
-    </div>    
-    <div class="col-sm-4">
-      <div class="well">
-      <img src="img/inicio3.jpeg" class="img-responsive" style="width:100%" alt="Image">
-      
-       
-      </div>
-      <div class="well">
-        <img src="img/Cubicos3.jpeg" class="img-responsive" style="width:100%" alt="Image">
-       
-      
+  <!-- Sección de Valores -->
+  <section class="section values-section bg-dark text-white">
+    <div class="container">
+      <h2 class="section-title text-center">NUESTROS VALORES</h2>
+      <div class="row">
+        <div class="col-md-4 value-item" data-animate="zoomIn">
+          <div class="value-icon">
+            <i class="fas fa-hands-helping"></i>
+          </div>
+          <h3>Hermandad</h3>
+          <p>La unión y apoyo mutuo son la base de nuestra comunidad motociclista.</p>
+        </div>
+        <div class="col-md-4 value-item" data-animate="zoomIn" data-delay="200">
+          <div class="value-icon">
+            <i class="fas fa-fist-raised"></i>
+          </div>
+          <h3>Rebeldía</h3>
+          <p>Fuente creadora de todo tipo de libertad y expresión auténtica.</p>
+        </div>
+        <div class="col-md-4 value-item" data-animate="zoomIn" data-delay="400">
+          <div class="value-icon">
+            <i class="fas fa-road"></i>
+          </div>
+          <h3>Pasión</h3>
+          <p>Por el motociclismo, los caminos abiertos y la aventura compartida.</p>
+        </div>
       </div>
     </div>
-  </div>
-</div><br>
+  </section>
 
+  <!-- Galería -->
+  <section class="section gallery-section">
+    <div class="container">
+      <h2 class="section-title">NUESTROS MOMENTOS</h2>
+      <div class="row gallery-row">
+        <div class="col-md-4 gallery-item" data-animate="fadeIn">
+          <img src="img/inicio3.jpeg" alt="Evento Magonistas" class="img-fluid">
+          <div class="gallery-overlay">
+            <h3>Presentación Oficial</h3>
+          </div>
+        </div>
+        <div class="col-md-4 gallery-item" data-animate="fadeIn" data-delay="200">
+          <img src="img/Cubicos3.jpeg" alt="Evento 1200cc" class="img-fluid">
+          <div class="gallery-overlay">
+            <h3>Evento 1200cc</h3>
+          </div>
+        </div>
+        <div class="col-md-4 gallery-item" data-animate="fadeIn" data-delay="400">
+          <img src="img/Presentacion1.jpeg" alt="Cobijón 2024" class="img-fluid">
+          <div class="gallery-overlay">
+            <h3>Cobijón 2024</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<footer class="container-fluid text-center" style="background-color: #070707; padding: 15px;">
-  <img src="img/Magonistas3.png" class="img-responsive img-fluid" style="width: 100%; max-height: 150px;" alt="Image">
-</footer>
+  <!-- Video Section -->
+  <section class="section video-section bg-light">
+    <div class="container">
+      <h2 class="section-title text-center">VIDEO DESTACADO</h2>
+      <div class="video-container" data-animate="fadeInUp">
+        <div class="ratio ratio-16x9">
+          <video controls poster="img/video-poster.jpg">
+            <source src="videos/PresentacionVid.mp4" type="video/mp4">
+            Tu navegador no soporta el elemento de video.
+          </video>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<script>
-  $(document).ready(function(){
-    // Configurar el intervalo de cambio de slide en milisegundos (en este caso, 3000 ms o 3 segundos)
-    $('#myCarousel').carousel({
-      interval: 3000
-    });
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 footer-brand">
+          <img src="img/Magonistas3.png" alt="Magonistas HM" class="footer-logo">
+          <p>SOMOS PENSAMIENTO Y ACCIÓN</p>
+        </div>
+        <div class="col-md-4 footer-links">
+          <h5>Enlaces</h5>
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="quienessomos.html">¿Quiénes Somos?</a></li>
+            <li><a href="proyectos.html">Proyectos</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4 footer-social">
+          <h5>Síguenos</h5>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="copyright text-center">
+        <p>&copy; 2024 Magonistas HM. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
 
-    // Activar el carrusel al cargar la página
-    $('#myCarousel').carousel('cycle');
-  });
-</script>
-
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/animations.js"></script>
 </body>
 </html>
-

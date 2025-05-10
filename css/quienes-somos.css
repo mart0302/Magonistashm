@@ -1,0 +1,105 @@
+/* Estilos específicos para la página ¿Quiénes Somos? */
+
+/* Hero Section */
+.about-hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../img/FONDO6.png');
+  background-size: cover;
+  background-position: center;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: white;
+  margin-top: 70px;
+}
+
+.about-hero h1 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 4rem;
+  letter-spacing: 3px;
+  margin-bottom: 20px;
+}
+
+.about-hero p {
+  font-size: 1.5rem;
+  margin-bottom: 0;
+}
+
+/* History Section */
+.history-section {
+  padding: 80px 0;
+  background-color: #f8f9fa;
+}
+
+.history-text {
+  padding: 30px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.history-text p {
+  margin-bottom: 20px;
+  font-size: 1.1rem;
+}
+
+/* Values Section */
+.values-section {
+  padding: 80px 0;
+  background-color: #1d3557;
+  color: white;
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.value-card {
+  background: white;
+  border-radius: 10px;
+  padding: 30px;
+  color: #333;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.value-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+}
+
+.value-icon {
+  font-size: 2.5rem;
+  color: #e63946;
+  margin-bottom: 20px;
+}
+
+.value-card h3 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  color: #1d3557;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .about-hero {
+    height: 50vh;
+    margin-top: 60px;
+  }
+  
+  .about-hero h1 {
+    font-size: 2.5rem;
+  }
+  
+  .about-hero p {
+    font-size: 1.2rem;
+  }
+  
+  .history-text {
+    margin-top: 30px;
+  }
+}
